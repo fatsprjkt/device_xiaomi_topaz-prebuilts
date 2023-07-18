@@ -232,11 +232,5 @@ BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml
 
-ifeq ($(PRODUCT_NAME), lineage_topaz)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest-lineage.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix-lineage.xml
-endif
-
 # VNDK
 BOARD_VNDK_VERSION := current

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_topaz.mk
+    $(LOCAL_DIR)/nad_topaz.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_topaz-eng \
-    lineage_topaz-userdebug \
-    lineage_topaz-user
+    nad_topaz-eng \
+    nad_topaz-userdebug \
+    nad_topaz-user

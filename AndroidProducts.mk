@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_topaz.mk
+    $(LOCAL_DIR)/aosp_topaz.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_topaz-eng \
-    nad_topaz-userdebug \
-    nad_topaz-user
+    aosp_topaz-eng \
+    aosp_topaz-userdebug \
+    aosp_topaz-user

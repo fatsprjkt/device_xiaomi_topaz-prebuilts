@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 # Overlays
+#DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
+# Overlays
 PRODUCT_PACKAGES += \
     AospWifiResOverlayTopaz \
     ApertureResTopaz \

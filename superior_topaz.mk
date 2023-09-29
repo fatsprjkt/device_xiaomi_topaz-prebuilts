@@ -9,20 +9,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit from topaz device.
 $(call inherit-product, device/xiaomi/topaz/device.mk)
 
-# Flags rom
+# Superior Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
-USE_PIXEL_CHARGING := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_MATLOG := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_BLUR := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+BUILD_WITH_GAPPS := true
+USE_QUICKPIC := true
+USE_DUCKDUCKGO := false
+
+# Maintainer
+PRODUCT_SYSTEM_PROPERTIES += \
+	ro.spos.maintainer=hefatss
 
 # Device identifier
-PRODUCT_NAME := lineage_topaz
+PRODUCT_NAME := superior_topaz
 PRODUCT_DEVICE := topaz
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 12 4G

@@ -75,9 +75,8 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    bootinfo.fingerprint=$(EVO_VERSION) \
-    swinfo.fingerprint=$(LINEAGE_VERSION) \
-    mtdoops.fingerprint=$(EVO_VERSION)
+    swinfo.fingerprint=$(SUPERIOR_VERSION) \
+    mtdoops.fingerprint=$(SUPERIOR_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -239,7 +238,7 @@ SOONG_CONFIG_XIAOMI_VIBRATOR_USE_EFFECT_STREAM := true
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/superior/config/device_framework_matrix.xml
 
 ifeq ($(PRODUCT_NAME), lineage_topaz)
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest-lineage.xml
